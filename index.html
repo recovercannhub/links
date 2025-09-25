@@ -9,18 +9,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <img src="assets/RC-logo.png" alt="RC Logo" class="logo">
         <h1>Recover Cann</h1>
         <p>Welcome to the hub! Find us online:</p>
+        <div class="social-icons">
+            <a href="https://instagram.com/recovercann" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram social-icon"></i>
+            </a>
+        </div>
         <div class="links">
             <a class="link" href="https://recovercann.ca/" target="_blank">Fill Your Prescription</a>
-            <a class="link" href="https://twitter.com/yourusername" target="_blank">Twitter</a>
-            <a class="link" href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-            <a class="link" href="mailto:your@email.com" target="_blank">Email Me</a>
+            <a class="link" href="https://www.cognitoforms.com/RecoverCann1/RecoverCannPatientExperienceForm" target="_blank">We Value Your Feedback</a>
+            <a class="link" id="contact-link" href="#">Contact Patient Support</a>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+  // Email obfuscation
+  document.getElementById('contact-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    var email = 'support1' + '@' + 'recovercann.ca'; // Replace with your email
+    window.location.href = 'mailto:' + email;
+  });
+</script>

@@ -14,7 +14,7 @@ body {
     box-shadow: 0 4px 24px rgba(0,0,0,0.12);
     padding: 32px 24px;
     max-width: 350px;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
 }
 .logo {
@@ -44,10 +44,24 @@ p {
     color: #fff;
     text-decoration: none;
     padding: 12px;
-    border-radius: 8px;
+    border-radius: .375rem;
     font-weight: 500;
     transition: background 0.2s;
 }
 .link:hover {
-    background: #185a9d;
+    background: rgb(102 204 154)
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    gap: 12px;
+}
+.social-icon {
+    color: black;
+    font-size: 22px;
+    transition: transform 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }

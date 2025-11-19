@@ -15,6 +15,8 @@ body {
     padding: 32px 24px;
     max-width: 350px;
     /* width: 100%; */
+    position: relative; /* allow absolute-positioned children (floating button) */
+    margin-top: 24px;
     text-align: center;
 }
 .logo {
@@ -65,3 +67,90 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.newsletter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0; /* space below the list to match .links gap */
+    display: grid;
+    gap: 16px;
+    /* responsive, mobile-first: auto-fit columns without media queries */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-items: center;
+}
+
+/* Thumbnail for newsletter PDFs */
+.pdf-thumb {
+    width: 100%;
+    max-width: 220px; /* smaller thumbnail */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    display: block;
+}
+.pdf-thumb:hover {
+    transform: translateY(-3px);
+    transition: transform 0.18s ease;
+}
+
+
+/* Floating back-to-home button that sits over the bottom-right of the container */
+.floating-back {
+    position: fixed; /* fixed to viewport */
+    right: 18px;
+    bottom: 18px;
+    background: #358464;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 999px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    z-index: 30;
+}
+.floating-back:hover {
+    background: rgb(102 204 154);
+}
+
+.newsletter-list li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+}
+
+.newsletter-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 12px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        max-width: 280px;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+}
+
+.newsletter-card .pdf-thumb {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+}
+
+.newsletter-caption {
+    margin-top: 8px;
+    font-weight: 600;
+    color: #222;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    padding: 6px 4px;
+    border-radius: 6px;
+}
+
+.newsletter-caption:hover {
+    background: rgba(53,132,100,0.06);
+    text-decoration: none;
+}
+

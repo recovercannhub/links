@@ -46,7 +46,7 @@ p {
 .links {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
 }
 .link {
     background: #358464;

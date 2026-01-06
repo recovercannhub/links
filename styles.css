@@ -22,6 +22,7 @@ body {
     /* width: 100%; */
     position: relative; /* allow absolute-positioned children (floating button) */
     margin: auto 0; /* center vertically when space allows */
+    margin-top: 15px;
     max-height: calc(100dvh - 48px);
     overflow: auto;
     text-align: center;

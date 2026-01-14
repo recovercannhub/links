@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+    <main class="container" role="main">
         <img src="assets/RC-logo.png" alt="RC Logo" class="logo">
         <h1>Recover Cann</h1>
         <p>Welcome to the hub! Find us online:</p>
@@ -31,12 +31,12 @@
             <a class="link" href="https://www.cognitoforms.com/RecoverCann1/RecoverCannPatientExperienceForm" target="_blank">We Value Your Feedback</a>
             <a class="link" id="contact-link" href="#">Contact Patient Support</a>
         </div>
-    </div>
+    </main>
         <script>
             // Email obfuscation
             document.getElementById('contact-link').addEventListener('click', function(e) {
                 e.preventDefault();
-                var email = 'support1' + '@' + 'recovercann.ca'; // Replace with your email
+                var email = 'support1' + '@' + 'recovercann.ca';
                 window.location.href = 'mailto:' + email;
             });
         </script>

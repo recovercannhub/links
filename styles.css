@@ -193,9 +193,9 @@ p {
 }
 .edu-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 14px;
-    max-width: 600px;
+    max-width: 300px;
     margin: 0 auto;
 }
 .edu-card {
@@ -213,6 +213,31 @@ p {
 .edu-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+.edu-card--coming-soon {
+    background: #f9f9f9;
+    border: 2px dashed #ccc;
+    box-shadow: none;
+    cursor: default;
+    opacity: 0.9;
+}
+.edu-card--coming-soon:hover {
+    transform: none;
+    box-shadow: none;
+}
+.edu-card--coming-soon .edu-icon {
+    background: rgba(0,0,0,0.04);
+    color: #aaa;
+}
+.edu-card--coming-soon .edu-title {
+    color: #666;
+}
+.edu-card--coming-soon .edu-sub {
+    color: #777;
+}
+.coming-soon-link {
+    color: #0a7f5a;
+    text-decoration: underline;
 }
 .edu-icon {
     width: 48px;
@@ -235,11 +260,12 @@ p {
 .edu-sub {
     font-size: 0.8rem;
     color: #666;
+    opacity: 0.9;
     line-height: 1.3;
     margin: 0;
 }
 
-/* Tablet and larger: maintain 2-column */
+/* Tablet and larger: 2-column */
 @media (min-width: 640px) {
     .education-container {
         padding: 36px 24px;
@@ -247,6 +273,7 @@ p {
     .edu-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 18px;
+        max-width: 600px;
     }
 }
 

@@ -30,50 +30,45 @@
         <div class="edu-sub">Registration & support</div>
       </a>
 
-      <a class="edu-card" href="#community">
-        <span class="edu-icon"><i class="fa-solid fa-people-group"></i></span>
-        <div class="edu-title">Community</div>
-        <div class="edu-sub">Veterans & initiatives</div>
-      </a>
+      <div class="edu-card edu-card--coming-soon">
+        <span class="edu-icon"><i class="fa-regular fa-clock"></i></span>
+        <div class="edu-title">More Coming Soon</div>
+        <div class="edu-sub">Have a suggestion? <a class="coming-soon-link" id="edu-suggest-link" href="#">Email Patient Support</a></div>
+      </div>
 
-      <a class="edu-card" href="#howto">
+      <!-- <a class="edu-card" href="#howto">
         <span class="edu-icon"><i class="fa-solid fa-wrench"></i></span>
         <div class="edu-title">How-To Guides</div>
         <div class="edu-sub">Troubleshooting tips</div>
-      </a>
+      </a> -->
 
-      <a class="edu-card" href="#product">
+      <!-- <a class="edu-card" href="#product">
         <span class="edu-icon"><i class="fa-solid fa-seedling"></i></span>
         <div class="edu-title">Product Knowledge</div>
         <div class="edu-sub">Strains & methods</div>
-      </a>
+      </a> -->
 
-      <a class="edu-card" href="#wellness">
+      <!-- <a class="edu-card" href="#wellness">
         <span class="edu-icon"><i class="fa-solid fa-heart"></i></span>
         <div class="edu-title">Wellness</div>
         <div class="edu-sub">Recipes & self-care</div>
-      </a>
+      </a> -->
 
-      <a class="edu-card" href="newsletters.html">
-        <span class="edu-icon"><i class="fa-regular fa-newspaper"></i></span>
-        <div class="edu-title">Newsletters</div>
-        <div class="edu-sub">Latest updates</div>
-      </a>
-
-      <a class="edu-card" href="testimonials.html">
-        <span class="edu-icon"><i class="fa-solid fa-comments"></i></span>
-        <div class="edu-title">Testimonials</div>
-        <div class="edu-sub">Hear from patients</div>
-      </a>
-
-      <a class="edu-card" href="#resources">
+      <!-- <a class="edu-card" href="#resources">
         <span class="edu-icon"><i class="fa-solid fa-download"></i></span>
         <div class="edu-title">Resources</div>
         <div class="edu-sub">Digital guides</div>
-      </a>
+      </a> -->
     </div>
   </main>
 
   <a class="floating-back" href="index.html" aria-label="Back to home">Home <i class="fa-solid fa-house"></i></a>
+  <script>
+    document.getElementById('edu-suggest-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      var email = 'support1' + '@' + 'recovercann.ca';
+      window.location.href = 'mailto:' + email;
+    });
+  </script>
 </body>
 </html>

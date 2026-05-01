@@ -1,0 +1,139 @@
+.education-container {
+    width: 100%;
+    min-height: 100dvh;
+    box-sizing: border-box;
+    padding: 28px 16px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    text-align: center;
+}
+
+.education-container .logo {
+    width: 64px;
+    height: 64px;
+    margin: 12px auto 16px auto;
+    border: 1px solid black;
+}
+
+.education-container h1 {
+    font-size: 1.4rem;
+    margin: 8px 0 8px 0;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.education-container .sub {
+    margin: 0 0 20px 0;
+    color: #0a7f5a;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.edu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.edu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 12px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: inherit;
+}
+
+.edu-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.edu-card--coming-soon {
+    background: #f9f9f9;
+    border: 2px dashed #ccc;
+    box-shadow: none;
+    cursor: default;
+    opacity: 0.9;
+}
+
+.edu-card--coming-soon:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.edu-card--coming-soon .edu-icon {
+    background: rgba(0,0,0,0.04);
+    color: #aaa;
+}
+
+.edu-card--coming-soon .edu-title {
+    color: #666;
+}
+
+.edu-card--coming-soon .edu-sub {
+    color: #777;
+}
+
+.coming-soon-link {
+    color: #0a7f5a;
+    text-decoration: underline;
+}
+
+.edu-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(53,132,100,0.08);
+    color: #0a7f5a;
+    font-size: 24px;
+}
+
+.edu-title {
+    font-weight: 700;
+    color: #222;
+    font-size: 0.95rem;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.edu-sub {
+    font-size: 0.8rem;
+    color: #666;
+    opacity: 0.9;
+    line-height: 1.3;
+    margin: 0;
+}
+
+@media (min-width: 640px) {
+    .education-container {
+        padding: 36px 24px;
+    }
+    .edu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 980px) {
+    .education-container {
+        padding: 44px 32px;
+    }
+    .edu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 800px;
+    }
+}

@@ -78,6 +78,17 @@ p {
     justify-content: center;
 }
 
+.copyright {
+    display: block;
+    margin-top: 28px;
+    padding: 12px 0 8px;
+    font-size: 0.72rem;
+    font-family: Montserrat, sans-serif;
+    color: #aaa;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+}
+
 /* Floating back-to-home button that sits over the bottom-right of the container */
 .floating-back {
     position: fixed; /* fixed to viewport */

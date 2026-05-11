@@ -108,6 +108,45 @@
           </div>
         </div>
 
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+          <div class="resource-body">
+            <div class="resource-name">Buddy Check</div>
+            <p class="resource-desc">Support resources for tough days — yours or a buddy's.</p>
+            <div class="resource-links">
+              <a class="resource-link" href="assets/community/Buddy Check.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> View PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <div class="resource-body">
+            <div class="resource-name">Emergency Fund Information</div>
+            <p class="resource-desc">How to access urgent financial support.</p>
+            <div class="resource-links">
+              <a class="resource-link" href="assets/community/Emergency Fund Information.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> View PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fa-solid fa-files"></i></div>
+          <div class="resource-body">
+            <div class="resource-name">Blue Cross Coverage Support</div>
+            <div class="resource-phones">
+              <div class="resource-phone-row">
+                <a class="resource-phone" href="tel:18882614033">1-888-261-4033</a>
+                <span class="resource-phone-label">Press 1 for English or 2 for French, then press 1 again</span>
+              </div>
+            </div>
+            <p class="resource-desc">Contact <a class="resource-link" id="bluecross-support-link" href="#">Recover Cann support</a> if you'd like assistance with a three-way call to Blue Cross to inquire about your coverage or resolve account discrepancies.</p>
+            <div class="resource-links">
+              <a class="resource-link" href="https://www.bluecross.ca/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> bluecross.ca</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -171,5 +210,13 @@
   </main>
 
   <a class="floating-back" href="index.html" aria-label="Back to home">Home <i class="fa-solid fa-house"></i></a>
+  <script>
+    // Email obfuscation
+    document.getElementById('bluecross-support-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      var email = 'support1' + '@' + 'recovercann.ca';
+      window.location.href = 'mailto:' + email;
+    });
+  </script>
 </body>
 </html>
